@@ -5,9 +5,11 @@ In an ever-evolving automotive market, determining the true value of a used car 
 Designed with car buyers, dealerships, and data professionals in mind, this analysis aims to uncover the hidden patterns that influence resale prices, ultimately supporting smarter purchasing and pricing strategies.
 
 **Dataset Overview**
+
 The dataset comprises 5,975 records of used cars, each with features essential to assessing market value. These include the car name and model, city of sale, year of manufacture, total kilometers driven, fuel type (e.g., Petrol, Diesel), transmission type (manual or automatic), and number of previous owners. It also covers performance and specification metrics such as mileage (in kmpl or km/kg), engine displacement (cc), horsepower, and seating capacity. The selling price (in INR) is the target variable, while a derived feature, Car_Age, captures the vehicle's age to aid in valuation analysis. Understanding this dataset allows us to pinpoint trends in the used car market, identify anomalies, and make accurate predictions.
 
 **Data Preprocessing**
+
 Before meaningful analysis, the dataset undergoes extensive cleaning to ensure consistency and reliability:
 
 - Missing Value Treatment: Extracted numeric values from text-heavy columns such as Power and Engine.
@@ -19,6 +21,7 @@ Before meaningful analysis, the dataset undergoes extensive cleaning to ensure c
 - Outlier Detection: Flagged extreme values in mileage, price, and kilometers driven using visual and statistical techniques.
 
 **Exploratory Data Analysis**
+
 With clean data, we explored key trends and anomalies:
 
 - Car Age Distribution: Most vehicles range between 5 to 12 years old, with outliers dating back to 1998.
@@ -30,6 +33,7 @@ With clean data, we explored key trends and anomalies:
 We employed histograms, box plots, and summary statistics to visualize data distributions and assess skewness.
 
 **Feature Engineering**
+
 To enhance predictive power, we engineered new features:
 
 Log Transformation: Applied to Kilometers_Driven and Price to reduce skewness and stabilize variance.
@@ -45,6 +49,7 @@ Derived Metrics:
 These additions enrich the dataset for modeling and pricing strategy.
 
 **Who Benefits?**
+
 This project offers value across several domains:
 
 - Car Buyers: Understand what drives price variations and make informed purchase decisions.
