@@ -32,21 +32,7 @@ With clean data, we explored key trends and anomalies:
 
 We employed histograms, box plots, and summary statistics to visualize data distributions and assess skewness.
 
-**Feature Engineering**
-
-To enhance predictive power, we engineered new features:
-
-Log Transformation: Applied to Kilometers_Driven and Price to reduce skewness and stabilize variance.
-
-Derived Metrics:
-
-- Price_per_HP: Selling price per unit of horsepower
-
-- Fuel_Efficiency: Adjusted efficiency after standardizing mileage
-
-- Luxury Indicator: A custom feature classifying cars into economy and premium segments based on brand and horsepower.
-
-These additions enrich the dataset for modeling and pricing strategy.
+After analyzing the dataset, we segmented the data into budget and luxury car categories based on descriptive statistics and domain insights. For the budget segment, we performed correlation analysis and used the Variance Inflation Factor (VIF) to avoid multicollinearity among features. Then, I focused on predicting the prices of budget cars using both linear and ensemble models. firstly, I trained a Linear Regression model and evaluated it using R², MAE, and MSE. Since, R² score for the linear regression model was low (0.67, i.e. linear model explained only 67% of variation in used car price), I implemented a Random Forest Regressor to improve efficiency, which significantly increased accuracy with an R² score of 0.80 and reduced prediction errors. I also analyzed feature importance to understand which variables (such as Power, Car Age, and Mileage) most influenced price predictions, and the most important feature according to the given set is car age followed power. Which makes sense becasue budget cars arebought by people with limited spending capacity and for them, these two factors matter the most. This model is well-suited for non-linear patterns and provides a more robust solution for budget car price estimation.
 
 **Who Benefits?**
 
