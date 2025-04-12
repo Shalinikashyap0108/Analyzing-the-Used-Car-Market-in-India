@@ -93,4 +93,5 @@ This project provides real value to:
 - Data Enthusiasts & Analysts: Learn how to clean, analyze, and model real-world messy data in a meaningful domain.
 
 **What's Next?**
+
 Stay tuned for modeling on the luxury segment, where brand value, transmission type, and fuel category might play a stronger role. I also plan to deploy this model as a simple web app to help users estimate resale value instantly.
